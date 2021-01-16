@@ -6,8 +6,9 @@ export default class NewComponent extends Component {
     }
 
     renderItem(item, idx){
-        console.log('Item', item);
-        console.log('Index', idx);
+        return (
+            <li key={ idx }> <b>{ item.text }</b> - { item.id }</li>
+        );
     }
 
     render() {
